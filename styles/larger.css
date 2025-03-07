@@ -13,5 +13,8 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 20px;
+        max-width: 800px;
+        margin: auto;
+        align-items: stretch;
     }
 }
