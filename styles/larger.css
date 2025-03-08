@@ -9,12 +9,22 @@
         display: inline;
     }
 
-    main {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+    main h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-between;
         gap: 20px;
+        width: 100%;
         max-width: 800px;
         margin: auto;
-        align-items: stretch;
+    }
+
+    .card {
+        flex: 1;
+        min-width: 300px;
     }
 }
