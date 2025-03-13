@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 230 - Web Frontend Development | Caroline Pereira Da Silva | Course Assignment Portal">
     <meta name="author" content="Caroline Pereira Da Silva">
+    <meta property="og:title" content="Caroline's Web Development Course Home Page">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development | Caroline Pereira Da Silva">
+    <meta property="og:url" content="https://yourusername.github.io/wdd230">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     
     <title>Caroline Pereira Da Silva - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/darkmode.css">
+    <script defer src="scripts/getDates.js"></script>
+    <script defer src="scripts/menu.js"></script>
+    <script defer src="scripts/darkMode.js"></script>
 </head>
 <body>
     <header>
         <img src="images/profile.png" alt="Caroline Pereira Da Silva Profile Photo" width="100">
         <span>Caroline Pereira Da Silva</span>
+        <button id="menu-toggle">☰</button>
+        <button id="dark-mode-toggle">🌙</button>
     </header>
 
     <nav>
-        <ul>
+        <ul id="menu">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
             <li><a href="#">Site Plan</a></li>
@@ -49,7 +57,7 @@
     </main>
     
     <footer>
-        <p>&copy; <span id="year"></span> © Caroline Pereira Da Silva | São Paulo, Brazil</p>
+        <p>&copy; <span id="year"></span> Caroline Pereira Da Silva | São Paulo, Brazil</p>
         <p id="lastModified"></p>
     </footer>
 
