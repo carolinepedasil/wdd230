@@ -3,54 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 - Web Frontend Development | Caroline Pereira Da Silva | Course Assignment Portal">
+    <meta name="description" content="Welcome to the São Paulo Chamber of Commerce. Promoting businesses, economic growth, and tourism in São Paulo.">
     <meta name="author" content="Caroline Pereira Da Silva">
-    <meta property="og:title" content="Caroline's Web Development Course Home Page">
-    <meta property="og:description" content="WDD 230 - Web Frontend Development | Caroline Pereira Da Silva">
-    <meta property="og:url" content="https://carolinepedasil.github.io/wdd230">
-    <meta property="og:image" content="https://carolinepedasil.github.io/wdd230/images/favicon.ico">
-    <meta property="og:type" content="website">
-    
+
+    <title>São Paulo Chamber of Commerce</title>
+
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    
-    <title>Caroline Pereira Da Silva - WDD 230 - Web Frontend Development</title>
+
+    <meta property="og:title" content="São Paulo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://carolinepedasil.github.io/wdd230/chamber/images/favicon.ico">
+    <meta property="og:url" content="https://carolinepedasil.github.io/wdd230">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/darkmode.css">    
 
-    <script defer src="scripts/getDates.js"></script>
-    <script defer src="scripts/menu.js"></script>
-    <script defer src="scripts/darkMode.js"></script>
-    <script defer src="scripts/pageCounter.js"></script>
+    <script defer src="scripts/script.js"></script>
     <script defer src="scripts/visitTracker.js"></script>
 </head>
 <body>
     <header>
-        <img src="images/profile.png" alt="Caroline Pereira Da Silva Profile Photo" width="100">
-        <span>Caroline Pereira Da Silva</span>
-        <button id="menu-toggle">☰</button>
-        <button id="dark-mode-toggle">🌙</button>
+        <h1>São Paulo Chamber of Commerce</h1>
+        <nav>
+            <button class="hamburger">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul id="menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
-        </ul>
-    </nav>
 
     <main class="discover-layout">
         <section class="sidebar">
             <h2>About São Paulo</h2>
             <br />
             <ul>
-                <li>Population: 12 million</li>
-                <li>Language: Portuguese</li>
-                <li>Founded: 1554</li>
+                <li><b>Population:</b> 12 million</li>
+                <li><b>Language:</b> Portuguese</li>
+                <li><b>Founded:</b> 1554</li>
             </ul>
             <br />
             <div class="sidebar-section">
