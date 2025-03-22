@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development | Caroline Pereira Da Silva | Course Assignment Portal">
+    <meta name="author" content="Caroline Pereira Da Silva">
+    <meta property="og:title" content="Caroline's Web Development Course Home Page">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development | Caroline Pereira Da Silva">
+    <meta property="og:url" content="https://carolinepedasil.github.io/wdd230">
+    <meta property="og:image" content="https://carolinepedasil.github.io/wdd230/images/favicon.ico">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <title>Caroline Pereira Da Silva - WDD 230 - Web Frontend Development</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/darkmode.css">    
+
+    <script defer src="scripts/getDates.js"></script>
+    <script defer src="scripts/menu.js"></script>
+    <script defer src="scripts/darkMode.js"></script>
+    <script defer src="scripts/pageCounter.js"></script>
+    <script defer src="scripts/visitTracker.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/profile.png" alt="Caroline Pereira Da Silva Profile Photo" width="100">
+        <span>Caroline Pereira Da Silva</span>
+        <button id="menu-toggle">☰</button>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <main class="discover-layout">
+        <section class="sidebar">
+            <h2>About São Paulo</h2>
+            <br />
+            <ul>
+                <li>Population: 12 million</li>
+                <li>Language: Portuguese</li>
+                <li>Founded: 1554</li>
+            </ul>
+            <br />
+            <div class="sidebar-section">
+                <h3>🍽️ Local Flavors</h3>
+                <p>Try São Paulo’s famous mortadella sandwich at the Municipal Market, or enjoy a traditional feijoada on Wednesdays and Saturdays!</p>
+            </div>
+            <br />
+            <div class="sidebar-section">
+                <h3>🎉 Upcoming Events</h3>
+                <ul>
+                    <li>📆 Mar 25: Startup Pitch Night</li>
+                    <li>📆 Apr 02: São Paulo Sustainability Forum</li>
+                    <li>📆 Apr 15: Local Artist Showcase</li>
+                </ul>
+            </div>
+            <br />
+            <div class="sidebar-section">
+                <h3>📌 Did You Know?</h3>
+                <p>São Paulo is home to the largest Japanese community outside of Japan!</p>
+            </div>
+            <br />
+            <p id="visit-message"></p>
+        </section>
+        
+        <section class="gallery">
+            <figure>
+                <img src="images/Catedral_Metropolitana_de_Sao_Paulo.jpg" alt="São Paulo Cathedral" loading="lazy">
+                <figcaption>São Paulo Cathedral</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Parque_da_Independencia.jpg" alt="Ipiranga Museum at Independence Park" loading="lazy">
+                <figcaption>Ipiranga Museum at Independence Park</figcaption>
+            </figure>
+            <figure>
+                <img src="images/MASP.jpg" alt="São Paulo Museum of Art on Paulista Avenue" loading="lazy">
+                <figcaption>São Paulo Museum of Art on Paulista Avenue</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Edificio_Altino_Arantes.jpg" alt="Altino Arantes Building in Downtown" loading="lazy">
+                <figcaption>Altino Arantes Building in Downtown</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Ponte_Estaiada_e_CENU.jpg" alt="Octávio Frias de Oliveira Bridge and CENU" loading="lazy">
+                <figcaption>Octávio Frias de Oliveira Bridge and CENU</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Teatro_Municipal_de_São_Paulo.jpg" alt="Municipal Theatre" loading="lazy">
+                <figcaption>Municipal Theatre</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Caroline Pereira Da Silva | São Paulo, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
