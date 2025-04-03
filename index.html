@@ -24,6 +24,8 @@
     <script defer src="scripts/menu.js"></script>
     <script defer src="scripts/darkMode.js"></script>
     <script defer src="scripts/pageCounter.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/links.js"></script>
 </head>
 <body>
     <header>
@@ -54,18 +56,17 @@
         <div class="card-container">
             <section class="card">
                 <h2>Learning Activities</h2>
-                <ul>
-                    <li><a href="#">Activity 1</a></li>
-                    <li><a href="#">Activity 2</a></li>
+                <ul id="learning-activities">
                 </ul>
             </section>
-    
-            <section class="card">
+            
+            <section class="card" id="weather-card">
                 <h2>Information</h2>
-                <p>Weather: ☀️</p>
+                <p id="weather">Loading weather...</p>
                 <p>Page Visits: <span id="visit-counter">0</span></p>
             </section>
         </div>
+        <br />
     </main>
     
     <iframe 
